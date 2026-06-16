@@ -18,7 +18,7 @@ jobs:
               -X POST \
               -d '{
                 "embeds": [{
-                  "title": "🆕 새로운 PR이 생성되었습니다!",
+                  "title": "🆕 새로운 PR이 등록되었습니다!",
                   "description": "[${{ github.event.pull_request.title }}](${{ github.event.pull_request.html_url }})",
                   "color": 3447003,
                   "fields": [
@@ -223,7 +223,7 @@ jobs:
           curl -H "Content-Type: application/json" \
               -X POST \
               -d "{
-                \"content\": \"🔄 **변경사항이 요청되었습니다!** $AUTHOR_MENTION\",
+                \"content\": \"🔄 **수정 요청이 발생되었습니다!** $AUTHOR_MENTION\",
                 \"embeds\": [{
                   \"title\": \"❗ 수정이 필요합니다\",
                   \"description\": \"[${{ github.event.pull_request.title }}](${{ github.event.pull_request.html_url }})\",
